@@ -160,6 +160,14 @@ img{max-width:100%;height:auto;display:block}
 .qa{max-height:0;overflow:hidden;transition:max-height .3s ease}
 .qa-in{padding:0 0 18px;font-size:14px;color:var(--sub);line-height:1.9}
 
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.gallery-item{position:relative;border-radius:var(--r);overflow:hidden}
+.gallery-item img{width:100%;height:160px;object-fit:cover;display:block}
+.gallery-item.gallery-wide{grid-column:1/-1}
+.gallery-item.gallery-wide img{height:200px}
+.gallery-cap{position:absolute;bottom:0;left:0;right:0;padding:6px 12px;background:linear-gradient(transparent,rgba(0,0,0,.45));color:#fff;font-size:11px;font-weight:500}
+
 /* ACCESS */
 .ac{background:var(--white);border-radius:var(--rl);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--border)}
 .ac iframe{width:100%;height:220px;border:none}
@@ -449,6 +457,32 @@ img{max-width:100%;height:auto;display:block}
   <div class="qi rv"><button class="qq">子どもを連れて行っても大丈夫ですか？</button><div class="qa"><div class="qa-in">はい、お子様連れでのご来店を歓迎しています。完全個室なので周囲を気にせず、安心してお過ごしいただけます。</div></div></div>
 </div></section>
 
+<section class="s" id="gallery">
+  <div class="w">
+    <p class="sl rv" style="text-align:center">Gallery</p>
+    <h2 class="st rv" style="text-align:center">店舗の<span class="hl">雰囲気</span></h2>
+    <p style="text-align:center;font-size:13px;color:var(--muted);margin-bottom:24px" class="rv">清潔感のある完全個室空間で、安心してトレーニングに集中できます</p>
+    <div class="gallery-grid rv">
+      <div class="gallery-item gallery-wide">
+        <img src="./gallery-01-studio.webp" alt="RESIST北浦和店 スタジオ全景" loading="lazy">
+        <span class="gallery-cap">スタジオ全景</span>
+      </div>
+      <div class="gallery-item">
+        <img src="./gallery-02-machine.webp" alt="トレーニングマシン" loading="lazy">
+        <span class="gallery-cap">トレーニングマシン</span>
+      </div>
+      <div class="gallery-item">
+        <img src="./gallery-03-pilates.webp" alt="ピラティスリフォーマー" loading="lazy">
+        <span class="gallery-cap">ピラティスリフォーマー</span>
+      </div>
+      <div class="gallery-item gallery-wide">
+        <img src="./gallery-04-entrance.webp" alt="受付・エントランス" loading="lazy">
+        <span class="gallery-cap">受付・エントランス</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="s" style="background:var(--bg)" id="access"><div class="w">
   <p class="sl rv">Access</p>
   <h2 class="st rv"><span class="hl">アクセス</span></h2>
@@ -457,6 +491,7 @@ img{max-width:100%;height:auto;display:block}
     <div class="ac-r"><dt>住所</dt><dd>埼玉県さいたま市浦和区<br>北浦和1-2-15 森ビル2階</dd></div>
     <div class="ac-r"><dt>最寄駅</dt><dd>JR京浜東北線 北浦和駅<br>徒歩4分</dd></div>
     <div class="ac-r"><dt>営業時間</dt><dd>8:00〜22:00</dd></div>
+    <div class="ac-r"><dt>目印</dt><dd>ファミリーマート北浦和駅東口店の隣のビル（森ビル）2階</dd></div>
   </dl></div></div>
   <div style="margin-top:28px" class="rv"><a href="https://resist-official.stores.jp/reserve/kitaurawa/2139246/book/course_type" target="_blank" rel="noopener" class="cta">無料体験を予約する</a></div>
 </div></section>
