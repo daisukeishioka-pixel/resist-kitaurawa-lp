@@ -25,7 +25,8 @@ fbq('init','1602127910990883');fbq('track','PageView');
   --shadow-lg:0 6px 24px rgba(0,0,0,.08);--r:14px;--rl:20px;
 }
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:'Noto Sans JP',sans-serif;color:var(--text);background:var(--white);line-height:1.8;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--text);background:#f0eeeb;line-height:1.8;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.page-wrap{max-width:480px;margin:0 auto;background:var(--white);min-height:100vh;box-shadow:0 0 40px rgba(0,0,0,.08)}
 .eng{font-family:'Outfit',sans-serif;letter-spacing:.04em}
 img{max-width:100%;height:auto;display:block}
 .w{max-width:640px;margin:0 auto;padding:0 20px}
@@ -168,8 +169,8 @@ img{max-width:100%;height:auto;display:block}
 .ac-r dt{font-weight:600;min-width:64px;color:var(--muted);flex-shrink:0;font-size:13px}
 
 /* FLOAT */
-.flt{position:fixed;bottom:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:10px 20px 12px;border-top:1px solid var(--border);transform:translateY(100%);transition:transform .3s ease}
-.flt.vis{transform:translateY(0)}
+.flt{position:fixed;bottom:0;left:50%;transform:translateX(-50%) translateY(100%);z-index:100;width:100%;max-width:480px;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:10px 20px 12px;border-top:1px solid var(--border);transition:transform .3s ease}
+.flt.vis{transform:translateX(-50%) translateY(0)}
 .flt .cta{padding:14px;font-size:15px;box-shadow:0 2px 12px rgba(217,59,48,.25)}
 
 .footer{background:var(--text);padding:28px 0 90px;text-align:center}
@@ -207,6 +208,7 @@ img{max-width:100%;height:auto;display:block}
 </style>
 </head>
 <body>
+<div class="page-wrap">
 
 <section class="hero">
   <div class="hero-photo">
@@ -465,6 +467,7 @@ img{max-width:100%;height:auto;display:block}
   <div class="footer-links"><a href="https://noside-official.com/">運営会社</a><a href="https://resist-official.com/privacy">プライバシーポリシー</a><a href="https://resist-official.com/tou">ご利用規約</a></div>
   <p class="footer-copy eng">&copy; 2026 No Side Inc.</p>
 </div></footer>
+</div>
 
 <div class="flt" id="flt"><a href="https://resist-official.stores.jp/reserve/kitaurawa/2139246/book/course_type" target="_blank" rel="noopener" class="cta">無料体験を予約する →</a></div>
 
