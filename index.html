@@ -74,27 +74,40 @@ img{max-width:100%;height:auto;display:block}
 .pr{text-align:center;margin-top:24px;font-size:15px;color:var(--sub);line-height:1.9}
 .pr strong{color:var(--red)}
 
-/* PILLARS */
-.pl{background:var(--white);border-radius:var(--rl);overflow:hidden;margin-bottom:14px;box-shadow:var(--shadow);border:1px solid var(--border)}
-.pl-v{height:200px;display:flex;align-items:center;justify-content:center;font-size:48px}
-.pv1{background:linear-gradient(135deg,#FFF5F3,#FFE8E2)}
-.pv2{background:linear-gradient(135deg,#FFF9F0,#FFEFD5)}
-.pv3{background:linear-gradient(135deg,#F0FFF4,#D5F5E3)}
-.pl-b{padding:20px 24px 24px}
-.pl-n{font-family:'Outfit',sans-serif;font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--muted);margin-bottom:2px}
-.pl-t{font-size:20px;font-weight:700;margin-bottom:2px}
-.pl-s{font-size:13px;color:var(--muted);margin-bottom:10px}
-.pl-d{font-size:14px;color:var(--sub);line-height:1.85}
-.pl-img{width:100%;height:220px;object-fit:cover}
-.pl-note{text-align:center;font-size:14px;color:var(--sub);line-height:1.9;margin-top:20px;padding:20px;background:var(--bg);border-radius:var(--r);border:1px solid var(--border)}
-.pl-note strong{color:var(--red)}
+/* WHY RESIST */
+.why-item{margin-bottom:28px}
+.why-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.why-num{width:36px;height:36px;border-radius:50%;background:var(--bg-accent);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;border:1px solid rgba(217,59,48,.12);color:var(--red)}
+.why-title{font-size:16px;font-weight:700;line-height:1.5}
+.why-desc{font-size:13px;color:var(--sub);line-height:1.85;margin-bottom:12px}
+.why-stat{background:var(--bg);border-radius:var(--r);padding:14px 16px;display:flex;align-items:center;gap:12px;border:1px solid var(--border)}
+.why-stat-num{font-size:28px;font-weight:700;color:var(--red);font-family:'Outfit',sans-serif;line-height:1}
+.why-stat-num span{font-size:13px;color:var(--muted);font-weight:400}
+.why-stat-label{font-size:12px;color:var(--sub);line-height:1.5}
+.why-compare{background:var(--bg);border-radius:var(--r);padding:14px 16px;border:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.why-compare-item{text-align:center}
+.why-compare-label{font-size:11px;color:var(--muted);margin-bottom:2px}
+.why-compare-label.accent{color:var(--red)}
+.why-compare-val{font-size:14px;font-weight:600;color:var(--sub)}
+.why-compare-val.muted{color:var(--sub)}
+.why-compare-val.accent-big{font-size:24px;font-weight:700;color:var(--red);font-family:'Outfit',sans-serif}
+.why-compare-val.accent-big span{font-size:13px;font-weight:400}
+.why-compare-arrow{font-size:16px;color:var(--border)}
+.why-menus{display:flex;gap:6px}
+.why-menu{flex:1;border-radius:var(--r);padding:10px;text-align:center}
+.why-menu-name{font-size:14px;font-weight:600;margin-bottom:2px}
+.why-menu-sub{font-size:11px;color:var(--muted)}
+.wm1{background:#FFF5F3;border:1px solid #FFE8E2}
+.wm2{background:#FFF9F0;border:1px solid #FFEFD5}
+.wm3{background:#F0FFF4;border:1px solid #D5F5E3}
 
-/* FEATURES */
-.fg{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.fc{background:var(--bg);border:1px solid var(--border);border-radius:var(--r);padding:20px 14px;text-align:center}
-.fi{font-size:26px;margin-bottom:8px}
-.ft{font-size:14px;font-weight:700;margin-bottom:3px}
-.fd{font-size:11px;color:var(--muted);line-height:1.5}
+/* MENU CARDS */
+.menu-card{background:var(--white);border-radius:var(--rl);overflow:hidden;margin-bottom:12px;box-shadow:var(--shadow);border:1px solid var(--border);display:flex;align-items:center;gap:0}
+.menu-img{width:120px;height:100px;object-fit:cover;flex-shrink:0}
+.menu-body{padding:12px 16px;flex:1}
+.menu-name{font-size:16px;font-weight:700;margin-bottom:1px}
+.menu-sub{font-size:11px;color:var(--muted);margin-bottom:4px}
+.menu-desc{font-size:12px;color:var(--sub);line-height:1.7}
 
 /* BA */
 .ba{border-radius:var(--rl);overflow:hidden;margin-bottom:16px;box-shadow:var(--shadow-lg);border:1px solid var(--border);background:var(--white)}
@@ -126,23 +139,25 @@ img{max-width:100%;height:auto;display:block}
 .ctb tbody tr:last-child td{border-bottom:none}
 
 /* PRICE */
-.pri{background:var(--white);border:2px solid var(--red);border-radius:var(--rl);padding:28px 24px;position:relative;box-shadow:var(--shadow-lg)}
-.pri-pop{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--grad);color:#fff;font-size:12px;font-weight:700;padding:4px 20px;border-radius:20px;white-space:nowrap}
-.pri-nm{font-size:17px;font-weight:700;text-align:center;margin-top:6px;margin-bottom:2px}
-.pri-sub{font-size:12px;color:var(--muted);text-align:center;margin-bottom:8px}
-.pri-am{text-align:center;font-family:'Outfit',sans-serif;font-size:52px;font-weight:800;line-height:1.1}
-.pri-tx{text-align:center;font-size:12px;color:var(--muted);margin-bottom:16px}
-.pri-ul{list-style:none}
-.pri-ul li{font-size:14px;padding:8px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
-.pri-ul li:last-child{border-bottom:none}
-.pri-ul li::before{content:'✓';color:var(--red);font-weight:700;font-size:13px;flex-shrink:0}
-.po{margin-top:20px}
-.po-t{font-size:14px;font-weight:600;color:var(--sub);margin-bottom:10px;text-align:center}
-.po-g{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.po-i{background:var(--bg);border-radius:var(--r);padding:14px;text-align:center;border:1px solid var(--border)}
-.po-n{font-size:11px;font-weight:600;color:var(--sub);margin-bottom:2px}
-.po-a{font-family:'Outfit',sans-serif;font-size:20px;font-weight:700}
-.po-tx{font-size:10px;color:var(--muted)}
+.price-compact{background:var(--white);border:1.5px solid var(--border);border-radius:var(--rl);overflow:hidden}
+.price-compact-main{padding:24px 20px 16px;text-align:center;position:relative}
+.price-compact-badge{display:inline-block;background:var(--grad);color:#fff;font-size:11px;font-weight:700;padding:3px 14px;border-radius:16px;margin-bottom:8px}
+.price-compact-name{font-size:15px;font-weight:700;margin-bottom:4px}
+.price-compact-amount{font-family:'Outfit',sans-serif;font-size:36px;font-weight:800;line-height:1.2}
+.price-compact-tax{font-size:13px;font-weight:400;color:var(--muted)}
+.price-compact-per{font-size:12px;color:var(--sub);margin-top:6px}
+.price-compact-list{display:flex;flex-wrap:wrap;gap:6px;padding:12px 20px 20px;justify-content:center}
+.price-compact-list span{font-size:11px;color:var(--sub);background:var(--bg);padding:4px 10px;border-radius:20px;border:1px solid var(--border)}
+.price-details{margin-top:12px;border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.price-details summary{padding:14px 20px;font-size:14px;font-weight:600;cursor:pointer;color:var(--sub);list-style:none;text-align:center}
+.price-details summary::after{content:' ▼';font-size:10px;color:var(--muted)}
+.price-details[open] summary::after{content:' ▲'}
+.price-details-grid{padding:0 16px 16px}
+.price-details-item{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)}
+.price-details-item:last-child{border-bottom:none}
+.pdi-name{font-size:13px;font-weight:500}
+.pdi-price{font-size:18px;font-weight:700}
+.pdi-tax{font-size:11px;color:var(--muted);margin-left:2px}
 
 /* FLOW */
 .fs{display:flex;gap:18px;margin-bottom:28px;position:relative}
@@ -356,28 +371,69 @@ img{max-width:100%;height:auto;display:block}
   <p class="pr rv">それは<strong>あなたのせいではありません。</strong><br>「続けられる仕組み」がなかっただけです。</p>
 </div></section>
 
-<section class="s" id="concept"><div class="w">
-  <p class="sl rv">Concept</p>
-  <h2 class="st rv">その日の自分に合わせて選べる、<br><span class="hl">3つのメニュー</span></h2>
-  <p style="font-size:14px;color:var(--sub);line-height:1.9;margin-bottom:28px" class="rv">体調や気分に合わせてトレーニング内容を毎回変えられます。通い放題だから「今日はストレッチだけ」でも大丈夫。</p>
-  <div class="pl rv"><img class="pl-img" src="./pillar-training.jpg" alt="鍛える - パーソナルトレーニング" loading="lazy"><div class="pl-b"><p class="pl-n eng">01 — TRAINING</p><h3 class="pl-t">鍛える</h3><p class="pl-s">パーソナルトレーニング</p><p class="pl-d">筋力アップ、ダイエット、ボディメイクに。正しいフォームで効率よく身体を変えていきます。マンツーマンだから、あなたの体力に合った負荷で安全にトレーニングできます。</p></div></div>
-  <div class="pl rv"><img class="pl-img" src="./pillar-pilates.jpg" alt="整える - マシンピラティス" loading="lazy"><div class="pl-b"><p class="pl-n eng">02 — PILATES</p><h3 class="pl-t">整える</h3><p class="pl-s">マット・マシンピラティス</p><p class="pl-d">リフォーマーを使った本格的なピラティスで、インナーマッスルを鍛え、身体の歪みを整えます。姿勢改善やボディラインの変化を実感できます。</p></div></div>
-  <div class="pl rv"><img class="pl-img" src="./pillar-stretch.jpg" alt="ほぐす - パーソナルストレッチ" loading="lazy"><div class="pl-b"><p class="pl-n eng">03 — STRETCH</p><h3 class="pl-t">ほぐす</h3><p class="pl-s">パーソナルストレッチ</p><p class="pl-d">疲れた日やリフレッシュしたい日に。肩や腰の張りを丁寧にほぐします。「今日はちょっとキツい」——そんな日はストレッチだけでも大丈夫です。</p></div></div>
-  <div class="pl-note rv"><strong>「通い放題」</strong>だからこそ、日によってトレーニング内容を変えられる。<br>この柔軟さが、運動を<strong>「義務」から「習慣」</strong>に変えていきます。</div>
-</div></section>
+<section class="s" id="why-resist">
+  <div class="w">
+    <p class="sl rv" style="text-align:center">Why RESIST</p>
+    <h2 class="st rv" style="text-align:center">なぜRESISTに通う人は<br><span class="hl">運動が「習慣」になるのか</span></h2>
 
-<section class="s" style="background:var(--bg)"><div class="w">
-  <p class="sl rv" style="text-align:center">Why RESIST</p>
-  <h2 class="st rv" style="text-align:center">「通いたくなる」には<span class="hl">理由がある</span></h2>
-  <div class="fg">
-    <div class="fc rv"><div class="fi">♾️</div><div class="ft">定額通い放題</div><div class="fd">回数を気にせず何度でも</div></div>
-    <div class="fc rv"><div class="fi">⏱</div><div class="ft">1回30分から</div><div class="fd">スキマ時間にサクッと</div></div>
-    <div class="fc rv"><div class="fi">👜</div><div class="ft">手ぶらOK</div><div class="fd">ウェア・シューズ・タオル無料</div></div>
-    <div class="fc rv"><div class="fi">🔒</div><div class="ft">完全個室</div><div class="fd">人目を気にせず集中できる</div></div>
-    <div class="fc rv"><div class="fi">📱</div><div class="ft">当日予約OK</div><div class="fd">アプリで簡単・直前まで可能</div></div>
-    <div class="fc rv"><div class="fi">👶</div><div class="ft">お子様連れ歓迎</div><div class="fd">ママもパパも安心して通える</div></div>
+    <div class="why-item rv">
+      <div class="why-head"><div class="why-num">1</div><div class="why-title">「今日も行こう」が<br>自然に生まれる</div></div>
+      <p class="why-desc">一般的なパーソナルジムは1回8,000〜15,000円。「今日は行かなくていいか」と足が遠のき、いつの間にか通わなくなる——。RESISTは月額定額の通い放題。回数を気にせず「ちょっと行こうかな」ができるから、運動が特別なイベントではなく日常になります。</p>
+      <div class="why-stat">
+        <div class="why-stat-num">3.2<span>回/週</span></div>
+        <div class="why-stat-label">通い放題プラン会員の<br>平均来店頻度</div>
+      </div>
+    </div>
+
+    <div class="why-item rv">
+      <div class="why-head"><div class="why-num">2</div><div class="why-title">30分だから<br>「忙しい」が言い訳にならない</div></div>
+      <p class="why-desc">一般的なジムは1回60〜90分。移動や着替えを入れると半日がかり。RESISTは1回30分、しかも手ぶらでOK。仕事前、昼休み、仕事帰り——スキマ時間でプロの指導が受けられます。</p>
+      <div class="why-compare">
+        <div class="why-compare-item"><div class="why-compare-label">一般的なジム</div><div class="why-compare-val muted">60〜90分</div></div>
+        <div class="why-compare-arrow">→</div>
+        <div class="why-compare-item"><div class="why-compare-label accent">RESIST</div><div class="why-compare-val accent-big">30<span>分</span></div></div>
+      </div>
+    </div>
+
+    <div class="why-item rv">
+      <div class="why-head"><div class="why-num">3</div><div class="why-title">「今日の自分」に<br>合わせて選べる</div></div>
+      <p class="why-desc">筋トレ・ピラティス・ストレッチを毎回自由に選べます。しっかり追い込みたい日は筋トレ、疲れた日はストレッチだけ。「今日はキツいからやめよう」ではなく「今日はストレッチにしよう」——この柔軟さが、運動を義務ではなく習慣に変えます。</p>
+      <div class="why-menus">
+        <div class="why-menu wm1"><div class="why-menu-name">鍛える</div><div class="why-menu-sub">筋トレ</div></div>
+        <div class="why-menu wm2"><div class="why-menu-name">整える</div><div class="why-menu-sub">ピラティス</div></div>
+        <div class="why-menu wm3"><div class="why-menu-name">ほぐす</div><div class="why-menu-sub">ストレッチ</div></div>
+      </div>
+    </div>
+
+    <div class="why-item rv">
+      <div class="why-head"><div class="why-num">4</div><div class="why-title">完全マンツーマンだから<br>30分で100%の効果</div></div>
+      <p class="why-desc">24時間ジムでは「何をすればいいかわからない」、グループレッスンでは「自分のペースでできない」。RESISTはプロのトレーナーが1対1であなた専用のメニューを組み、正しいフォームで指導。30分間すべてがあなたのための時間です。</p>
+    </div>
+
+    <div style="margin-top:28px" class="rv">
+      <a href="https://resist-official.stores.jp/reserve/kitaurawa/2139246/book/course_type" target="_blank" rel="noopener" class="cta">無料体験を予約する →</a>
+      <span class="cn">まずは体験で、続けられる実感を</span>
+    </div>
   </div>
-</div></section>
+</section>
+
+<section class="s" style="background:var(--bg)" id="concept"><div class="w">
+  <p class="sl rv" style="text-align:center">Menu</p>
+  <h2 class="st rv" style="text-align:center">その日の自分に合わせて選べる<br><span class="hl">3つのメニュー</span></h2>
+    <div class="menu-card rv">
+      <img src="./pillar-training.jpg" alt="パーソナルトレーニング" loading="lazy" class="menu-img">
+      <div class="menu-body"><h3 class="menu-name">鍛える</h3><p class="menu-sub">パーソナルトレーニング</p><p class="menu-desc">あなたの目標と体力に合わせた完全オーダーメイド。正しいフォームで効率よく身体を変えます。</p></div>
+    </div>
+    <div class="menu-card rv">
+      <img src="./pillar-pilates.jpg" alt="マシンピラティス" loading="lazy" class="menu-img">
+      <div class="menu-body"><h3 class="menu-name">整える</h3><p class="menu-sub">マット・マシンピラティス</p><p class="menu-desc">リフォーマーでインナーマッスルを鍛え、身体の歪みを整えます。姿勢改善に。</p></div>
+    </div>
+    <div class="menu-card rv">
+      <img src="./pillar-stretch.jpg" alt="パーソナルストレッチ" loading="lazy" class="menu-img">
+      <div class="menu-body"><h3 class="menu-name">ほぐす</h3><p class="menu-sub">パーソナルストレッチ</p><p class="menu-desc">疲れた日やリフレッシュしたい日に。ストレッチだけの日も大丈夫です。</p></div>
+    </div>
+  </div>
+</section>
 
 <section class="s" id="results"><div class="w">
   <p class="sl rv">Results</p>
@@ -393,37 +449,77 @@ img{max-width:100%;height:auto;display:block}
   <div class="tr-c rv"><img src="https://storage.googleapis.com/studio-design-asset-files/projects/7kadzvkbO3/s-3375x3375_3ac1b87c-1f56-4280-abb1-1140cb4f5ef7.webp" alt="田村京椰トレーナー" loading="lazy"><div class="tr-b"><p class="tr-en eng">Kyoya Tamura</p><h3 class="tr-nm">田村 京椰</h3><p class="tr-ct">楽しさと継続力で理想を実現！</p><p class="tr-d">忙しい日々でも無理なく取り組めるメニュー設計が得意。ポジティブな声かけと、きめ細かなサポートで、トレーニングが生活の一部に。モチベーションの波に寄り添いながら、継続する楽しさと確かな成果をご提案します。</p><p class="tr-cr">【実績】サマースタイルアワード 5位入賞<br>【資格】JATI（日本トレーニング指導者協会認定）取得</p></div></div>
 </div></section>
 
+<section class="s" id="gallery">
+  <div class="w">
+    <p class="sl rv" style="text-align:center">Gallery</p>
+    <h2 class="st rv" style="text-align:center">店舗の<span class="hl">雰囲気</span></h2>
+    <p style="text-align:center;font-size:13px;color:var(--muted);margin-bottom:24px" class="rv">清潔感のある完全個室空間で、安心してトレーニングに集中できます</p>
+    <div class="gallery-grid rv">
+      <div class="gallery-item gallery-wide">
+        <img src="./gallery-01-studio.webp" alt="RESIST北浦和店 スタジオ全景" loading="lazy">
+        <span class="gallery-cap">スタジオ全景</span>
+      </div>
+      <div class="gallery-item">
+        <img src="./gallery-02-machine.webp" alt="トレーニングマシン" loading="lazy">
+        <span class="gallery-cap">トレーニングマシン</span>
+      </div>
+      <div class="gallery-item">
+        <img src="./gallery-03-pilates.webp" alt="ピラティスリフォーマー" loading="lazy">
+        <span class="gallery-cap">ピラティスリフォーマー</span>
+      </div>
+      <div class="gallery-item gallery-wide">
+        <img src="./gallery-04-entrance.webp" alt="受付・エントランス" loading="lazy">
+        <span class="gallery-cap">受付・エントランス</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="s"><div class="w">
-  <p class="sl rv">Comparison</p>
-  <h2 class="st rv">回数制ジムとの<span class="hl">比較</span></h2>
-  <table class="ctb rv"><thead><tr><th></th><th>一般的な<br>回数制ジム</th><th>RESIST<br>通い放題</th></tr></thead><tbody>
-    <tr><td>月額料金</td><td>月4回<br>約40,000円</td><td><span class="hl" style="font-weight:700">49,800円</span><br>で通い放題</td></tr>
-    <tr><td>1回あたり</td><td>約10,000円</td><td><span class="hl" style="font-weight:700">約1,660円〜</span><br><span style="font-size:11px;color:var(--muted)">月30回の場合</span></td></tr>
-    <tr><td>メニュー</td><td>筋トレのみ</td><td>筋トレ＋ピラティス<br>＋ストレッチ</td></tr>
-    <tr><td>持ち物</td><td>持参が必要</td><td>手ぶらでOK</td></tr>
-    <tr><td>時間</td><td>1回60分〜</td><td>1回30分で完結</td></tr>
-  </tbody></table>
+    <p class="sl rv">Comparison</p>
+    <h2 class="st rv">一般的なパーソナルジムとの<span class="hl">比較</span></h2>
+    <table class="ctb rv"><thead><tr><th></th><th>一般的な<br>パーソナルジム</th><th>RESIST<br>通い放題</th></tr></thead><tbody>
+      <tr><td>1回あたり</td><td>8,000〜15,000円</td><td><span class="hl" style="font-weight:700">約1,660円〜</span></td></tr>
+      <tr><td>通える回数</td><td>月4〜8回</td><td>回数無制限</td></tr>
+      <tr><td>メニュー</td><td>筋トレのみ</td><td>筋トレ＋ピラティス<br>＋ストレッチ</td></tr>
+      <tr><td>1回の時間</td><td>60〜90分</td><td>30分で完結</td></tr>
+      <tr><td>持ち物</td><td>持参が必要</td><td>手ぶらでOK</td></tr>
+      <tr><td>予約</td><td>数日前まで</td><td>当日直前までOK</td></tr>
+    </tbody></table>
 </div></section>
 
-<section class="s" style="background:var(--bg)" id="price"><div class="w">
-  <p class="sl rv" style="text-align:center">Price</p>
-  <h2 class="st rv" style="text-align:center"><span class="hl">料金プラン</span></h2>
-  <div class="pri rv"><div class="pri-pop">一番人気</div><p class="pri-nm">30分コース 通い放題プラン</p><p class="pri-sub">コスパ最高の一番人気！</p><p class="pri-am"><span class="hl eng">¥49,800</span></p><p class="pri-tx">/月（税込）</p>
-    <ul class="pri-ul"><li>全日通い放題（1日1回まで）</li><li>同時予約可能枠：4枠</li><li>ウェア・シューズ貸出無料</li><li>当日予約：直前まで可能</li><li>24時間LINE相談可能</li><li>食事サポート付き</li></ul>
-  </div>
-  <div class="po rv"><p class="po-t">その他のプラン</p><div class="po-g">
-    <div class="po-i" style="grid-column:1/-1">
-      <p class="po-n">60分コース 通い放題プラン</p>
-      <p class="po-a eng">¥99,600</p>
-      <p class="po-tx">税込/月｜同時予約枠 無制限・30分/60分コース対応</p>
+<section class="s" id="price">
+  <div class="w">
+    <p class="sl rv" style="text-align:center">Price</p>
+    <h2 class="st rv" style="text-align:center"><span class="hl">料金プラン</span></h2>
+    <div class="price-compact rv">
+      <div class="price-compact-main">
+        <div class="price-compact-badge">一番人気</div>
+        <p class="price-compact-name">30分コース 通い放題プラン</p>
+        <p class="price-compact-amount"><span class="hl eng">¥49,800</span><span class="price-compact-tax">/月（税込）</span></p>
+        <p class="price-compact-per">通えば通うほどお得。月30回通えば<span style="color:var(--red);font-weight:600">1回あたり約1,660円</span></p>
+      </div>
+      <div class="price-compact-list">
+        <span>通い放題</span><span>完全マンツーマン</span><span>ウェア無料</span><span>当日予約OK</span><span>食事サポート</span><span>契約縛りなし</span>
+      </div>
     </div>
-    <div class="po-i"><p class="po-n">30分 月2回</p><p class="po-a eng">¥14,000</p><p class="po-tx">税込/月</p></div>
-    <div class="po-i"><p class="po-n">30分 月4回</p><p class="po-a eng">¥27,000</p><p class="po-tx">税込/月</p></div>
-    <div class="po-i"><p class="po-n">60分 月2回</p><p class="po-a eng">¥28,000</p><p class="po-tx">税込/月</p></div>
-    <div class="po-i"><p class="po-n">60分 月4回</p><p class="po-a eng">¥54,000</p><p class="po-tx">税込/月</p></div>
-  </div></div>
-  <div style="margin-top:28px" class="rv"><a href="https://resist-official.stores.jp/reserve/kitaurawa/2139246/book/course_type" target="_blank" rel="noopener" class="cta">まずは無料体験から</a><span class="cn">体験当日のご入会で入会金無料</span></div>
-</div></section>
+    <details class="price-details rv">
+      <summary>その他のプランを見る</summary>
+      <div class="price-details-grid">
+        <div class="price-details-item"><span class="pdi-name">60分 通い放題</span><span class="pdi-price eng">¥99,600</span><span class="pdi-tax">/月</span></div>
+        <div class="price-details-item"><span class="pdi-name">30分 月2回</span><span class="pdi-price eng">¥14,000</span><span class="pdi-tax">/月</span></div>
+        <div class="price-details-item"><span class="pdi-name">30分 月4回</span><span class="pdi-price eng">¥27,000</span><span class="pdi-tax">/月</span></div>
+        <div class="price-details-item"><span class="pdi-name">60分 月2回</span><span class="pdi-price eng">¥28,000</span><span class="pdi-tax">/月</span></div>
+        <div class="price-details-item"><span class="pdi-name">60分 月4回</span><span class="pdi-price eng">¥54,000</span><span class="pdi-tax">/月</span></div>
+      </div>
+      <p style="font-size:11px;color:var(--muted);margin-top:8px">※表示価格はすべて税込です</p>
+    </details>
+    <div style="margin-top:24px" class="rv">
+      <a href="https://resist-official.stores.jp/reserve/kitaurawa/2139246/book/course_type" target="_blank" rel="noopener" class="cta">まずは無料体験から →</a>
+      <span class="cn">体験当日のご入会で入会金無料</span>
+    </div>
+  </div>
+</section>
 
 <section class="s"><div class="w">
   <p class="sl rv">Flow</p>
@@ -454,34 +550,9 @@ img{max-width:100%;height:auto;display:block}
   <div class="qi rv"><button class="qq">体験当日に入会を決めなくても大丈夫ですか？</button><div class="qa"><div class="qa-in">もちろんです。じっくりご検討ください。無理な勧誘は一切行いません。ただし、体験当日のご入会で入会金が無料になる特典がございます。</div></div></div>
   <div class="qi rv"><button class="qq">予約は取りやすいですか？</button><div class="qa"><div class="qa-in">アプリから当日予約も可能です。空き状況もリアルタイムで確認できるので、スキマ時間にサッと予約できます。</div></div></div>
   <div class="qi rv"><button class="qq">契約期間の縛りはありますか？</button><div class="qa"><div class="qa-in">ありません。月単位でのお支払いなので、いつでも解約可能です。まずは1ヶ月からお気軽にお試しください。</div></div></div>
+  <div class="qi rv"><button class="qq">料金プランの詳細を教えてください</button><div class="qa"><div class="qa-in">30分コース通い放題プランは月額49,800円（税込）で、パーソナルトレーニング・ピラティス・ストレッチが何度でも受けられます。他にも月2回（14,000円）、月4回（27,000円）のプランや、60分コースもございます。詳しくはお気軽にお問い合わせください。</div></div></div>
   <div class="qi rv"><button class="qq">子どもを連れて行っても大丈夫ですか？</button><div class="qa"><div class="qa-in">はい、お子様連れでのご来店を歓迎しています。完全個室なので周囲を気にせず、安心してお過ごしいただけます。</div></div></div>
 </div></section>
-
-<section class="s" id="gallery">
-  <div class="w">
-    <p class="sl rv" style="text-align:center">Gallery</p>
-    <h2 class="st rv" style="text-align:center">店舗の<span class="hl">雰囲気</span></h2>
-    <p style="text-align:center;font-size:13px;color:var(--muted);margin-bottom:24px" class="rv">清潔感のある完全個室空間で、安心してトレーニングに集中できます</p>
-    <div class="gallery-grid rv">
-      <div class="gallery-item gallery-wide">
-        <img src="./gallery-01-studio.webp" alt="RESIST北浦和店 スタジオ全景" loading="lazy">
-        <span class="gallery-cap">スタジオ全景</span>
-      </div>
-      <div class="gallery-item">
-        <img src="./gallery-02-machine.webp" alt="トレーニングマシン" loading="lazy">
-        <span class="gallery-cap">トレーニングマシン</span>
-      </div>
-      <div class="gallery-item">
-        <img src="./gallery-03-pilates.webp" alt="ピラティスリフォーマー" loading="lazy">
-        <span class="gallery-cap">ピラティスリフォーマー</span>
-      </div>
-      <div class="gallery-item gallery-wide">
-        <img src="./gallery-04-entrance.webp" alt="受付・エントランス" loading="lazy">
-        <span class="gallery-cap">受付・エントランス</span>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="s" style="background:var(--bg)" id="access"><div class="w">
   <p class="sl rv">Access</p>
