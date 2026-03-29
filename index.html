@@ -222,6 +222,11 @@ img{max-width:100%;height:auto;display:block}
 .review-dot{width:8px;height:8px;border-radius:50%;background:var(--border);border:none;cursor:pointer;transition:all .3s;padding:0}
 .review-dot.active{background:var(--red);width:24px;border-radius:4px}
 .review-glink{display:block;text-align:center;margin-top:20px;font-size:13px;color:var(--red);text-decoration:none;font-weight:500}
+.review-arrow{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;background:rgba(0,0,0,.08);border:none;cursor:pointer;font-size:22px;color:rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;transition:background .2s,color .2s;z-index:2;-webkit-tap-highlight-color:transparent}
+.review-arrow:hover{background:rgba(0,0,0,.15);color:rgba(0,0,0,.55)}
+.review-arrow:active{transform:translateY(-50%) scale(.92)}
+.review-arrow-left{left:2px}
+.review-arrow-right{right:2px}
 </style>
 </head>
 <body>
@@ -385,6 +390,8 @@ img{max-width:100%;height:auto;display:block}
         </div>
 
       </div>
+      <button class="review-arrow review-arrow-left" id="reviewPrev" aria-label="前の口コミ">‹</button>
+      <button class="review-arrow review-arrow-right" id="reviewNext" aria-label="次の口コミ">›</button>
       <div class="review-dots" id="reviewDots"></div>
     </div>
 
@@ -519,6 +526,11 @@ document.querySelectorAll('a[href="#trial-form"]').forEach(l=>{l.addEventListene
       d.classList.toggle('active',idx===current);
     });
   }
+
+  var prevBtn=document.getElementById('reviewPrev');
+  var nextBtn=document.getElementById('reviewNext');
+  if(prevBtn) prevBtn.addEventListener('click',function(){goTo(current-1)});
+  if(nextBtn) nextBtn.addEventListener('click',function(){goTo(current+1)});
 
   // Touch events
   track.addEventListener('touchstart',e=>{startX=e.touches[0].clientX;isDragging=true;track.classList.add('grabbing')},{passive:true});
