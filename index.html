@@ -43,21 +43,21 @@ img{max-width:100%;height:auto;display:block}
 
 /* HERO */
 .hero{position:relative;background:#fff;overflow:hidden}
-.hero-photo{position:relative;width:100%;height:420px;overflow:hidden}
+.hero-photo{position:relative;width:100%;height:520px;overflow:hidden}
 .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
-.hero-overlay{position:absolute;left:0;right:0;top:0;height:420px;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.02) 35%,rgba(255,255,255,0.6) 55%,rgba(255,255,255,0.92) 70%,#fff 82%);z-index:1;pointer-events:none}
-.hero-body{position:relative;z-index:2;margin-top:-120px;padding:0 24px 32px}
+.hero-overlay{position:absolute;left:0;right:0;top:0;height:520px;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 45%,rgba(255,255,255,0.5) 62%,rgba(255,255,255,0.9) 75%,#fff 85%);z-index:1;pointer-events:none}
+.hero-body{position:relative;z-index:2;margin-top:-100px;padding:0 24px 32px}
 .hero-cp{display:inline-block;background:var(--red);color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:4px;margin-bottom:12px}
 .hero h1{font-size:26px;font-weight:900;line-height:1.5;margin-bottom:8px;color:var(--text)}
 .hero h1 em{font-style:normal;color:var(--red)}
 .hero-sub{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:16px}
-.hero-campaign{background:linear-gradient(135deg,#FFF8F6,#FFF5F0);border:1.5px solid rgba(217,59,48,.15);border-radius:12px;padding:16px;margin-bottom:20px}
-.hero-campaign-label{text-align:center;font-size:12px;font-weight:700;color:var(--red);margin-bottom:10px;letter-spacing:.04em}
+.hero-campaign{background:linear-gradient(135deg,#FFF8F6,#FFF5F0);border:1.5px solid rgba(217,59,48,.15);border-radius:12px;padding:12px 14px;margin-bottom:14px}
+.hero-campaign-label{text-align:center;font-size:11px;font-weight:700;color:var(--red);margin-bottom:6px;letter-spacing:.04em}
 .hero-campaign-grid{display:flex;gap:8px}
-.hero-campaign-item{flex:1;background:#fff;border-radius:8px;padding:10px 8px;text-align:center}
+.hero-campaign-item{flex:1;background:#fff;border-radius:8px;padding:8px 6px;text-align:center}
 .hci-label{display:block;font-size:10px;color:var(--muted)}
 .hci-old{display:block;font-size:10px;color:var(--muted);text-decoration:line-through}
-.hci-new{display:block;font-size:24px;font-weight:800;color:var(--red);font-family:'Outfit',sans-serif;line-height:1.2}
+.hci-new{display:block;font-size:20px;font-weight:800;color:var(--red);font-family:'Outfit',sans-serif;line-height:1.2}
 
 .tk{background:var(--bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;white-space:nowrap;padding:10px 0}
 .tk-inner{display:inline-flex;animation:tkscroll 18s linear infinite}
@@ -65,7 +65,7 @@ img{max-width:100%;height:auto;display:block}
 .tk-inner span::before{content:'';width:5px;height:5px;background:var(--red);border-radius:50%;flex-shrink:0}
 @keyframes tkscroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-@media(min-width:480px){.hero h1{font-size:30px}.hero-photo{height:480px}.hero-overlay{height:480px}.hero-body{margin-top:-140px}}
+@media(min-width:480px){.hero h1{font-size:30px}.hero-photo{height:560px}.hero-overlay{height:560px}.hero-body{margin-top:-110px}}
 
 /* PAIN */
 .pain{background:var(--bg)}
