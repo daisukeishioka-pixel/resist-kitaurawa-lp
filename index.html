@@ -75,31 +75,33 @@ img{max-width:100%;height:auto;display:block}
 .pr strong{color:var(--red)}
 
 /* WHY RESIST */
-.why-item{margin-bottom:28px}
-.why-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}
-.why-num{width:36px;height:36px;border-radius:50%;background:var(--bg-accent);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;border:1px solid rgba(217,59,48,.12);color:var(--red)}
-.why-title{font-size:16px;font-weight:700;line-height:1.5}
-.why-desc{font-size:13px;color:var(--sub);line-height:1.85;margin-bottom:12px}
-.why-stat{background:var(--bg);border-radius:var(--r);padding:14px 16px;display:flex;align-items:center;gap:12px;border:1px solid var(--border)}
-.why-stat-num{font-size:28px;font-weight:700;color:var(--red);font-family:'Outfit',sans-serif;line-height:1}
-.why-stat-num span{font-size:13px;color:var(--muted);font-weight:400}
-.why-stat-label{font-size:12px;color:var(--sub);line-height:1.5}
-.why-compare{background:var(--bg);border-radius:var(--r);padding:14px 16px;border:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
-.why-compare-item{text-align:center}
-.why-compare-label{font-size:11px;color:var(--muted);margin-bottom:2px}
-.why-compare-label.accent{color:var(--red)}
-.why-compare-val{font-size:14px;font-weight:600;color:var(--sub)}
-.why-compare-val.muted{color:var(--sub)}
-.why-compare-val.accent-big{font-size:24px;font-weight:700;color:var(--red);font-family:'Outfit',sans-serif}
-.why-compare-val.accent-big span{font-size:13px;font-weight:400}
-.why-compare-arrow{font-size:16px;color:var(--border)}
-.why-menus{display:flex;gap:6px}
-.why-menu{flex:1;border-radius:var(--r);padding:10px;text-align:center}
-.why-menu-name{font-size:14px;font-weight:600;margin-bottom:2px}
-.why-menu-sub{font-size:11px;color:var(--muted)}
-.wm1{background:#FFF5F3;border:1px solid #FFE8E2}
-.wm2{background:#FFF9F0;border:1px solid #FFEFD5}
-.wm3{background:#F0FFF4;border:1px solid #D5F5E3}
+.why-item{margin-bottom:40px}
+.why-num{font-size:36px;font-weight:500;color:var(--border);margin-bottom:8px;line-height:1;font-family:'Outfit',sans-serif}
+.why-title{font-size:18px;font-weight:700;line-height:1.5;margin-bottom:12px}
+.why-desc{font-size:13px;color:#777;line-height:1.9;margin-bottom:24px}
+.why-divider{width:100%;height:1px;background:var(--border);margin-bottom:40px}
+.why-data-center{text-align:center}
+.why-price-compare{display:flex;align-items:center;justify-content:center;gap:24px}
+.why-price-item{text-align:center}
+.why-price-label{font-size:13px;color:#bbb;margin-bottom:4px}
+.why-price-label.why-accent{color:var(--red)}
+.why-price-val-muted{font-size:20px;font-weight:700;color:#bbb;line-height:1.2}
+.why-price-val-muted span{font-size:12px;font-weight:400}
+.why-price-val-accent{font-size:32px;font-weight:700;color:var(--red);line-height:1.2}
+.why-price-val-accent span{font-size:12px;font-weight:400}
+.why-price-note{font-size:11px;color:var(--muted);margin-top:8px}
+.why-time-compare{display:flex;align-items:center;justify-content:center;gap:28px}
+.why-time-item{text-align:center}
+.why-time-label{font-size:13px;color:#bbb;margin-bottom:4px}
+.why-time-label.why-accent{color:var(--red)}
+.why-time-val-muted{font-size:16px;color:#bbb;text-decoration:line-through}
+.why-time-val-accent{font-size:40px;font-weight:700;color:var(--red);line-height:1}
+.why-time-val-accent span{font-size:14px;font-weight:400}
+.why-time-arrow{font-size:14px;color:#ddd}
+.why-menu-row{display:flex;gap:12px}
+.why-menu-col{flex:1;text-align:center;padding:16px 6px 14px}
+.why-menu-col svg{margin:0 auto 8px;display:block}
+.why-menu-name{font-size:14px;font-weight:600}
 
 /* MENU CARDS */
 .menu-card{background:var(--white);border-radius:var(--rl);overflow:hidden;margin-bottom:12px;box-shadow:var(--shadow);border:1px solid var(--border);display:flex;align-items:center;gap:0}
@@ -377,40 +379,66 @@ img{max-width:100%;height:auto;display:block}
     <h2 class="st rv" style="text-align:center">なぜRESISTに通う人は<br><span class="hl">運動が「習慣」になるのか</span></h2>
 
     <div class="why-item rv">
-      <div class="why-head"><div class="why-num">1</div><div class="why-title">「今日も行こう」が<br>自然に生まれる</div></div>
-      <p class="why-desc">一般的なパーソナルジムは1回8,000〜15,000円。「今日は行かなくていいか」と足が遠のき、いつの間にか通わなくなる——。RESISTは月額定額の通い放題。回数を気にせず「ちょっと行こうかな」ができるから、運動が特別なイベントではなく日常になります。</p>
-      <div class="why-stat">
-        <div class="why-stat-num">3.2<span>回/週</span></div>
-        <div class="why-stat-label">通い放題プラン会員の<br>平均来店頻度</div>
+      <div class="why-num eng">01</div>
+      <h3 class="why-title">圧倒的なコストパフォーマンス。<br>1回あたり、たった1,660円から。</h3>
+      <p class="why-desc">一般的なパーソナルジムは1回8,000〜15,000円。RESISTの通い放題プランなら、通えば通うほど1回あたりの単価が下がります。週5回通えば、カフェのランチ1回分でプロの指導が受けられます。</p>
+      <div class="why-data-center">
+        <div class="why-price-compare">
+          <div class="why-price-item"><div class="why-price-label">一般的なジム</div><div class="why-price-val-muted eng">¥8,000〜<span>/ 回</span></div></div>
+          <div class="why-time-arrow">→</div>
+          <div class="why-price-item"><div class="why-price-label why-accent">RESIST</div><div class="why-price-val-accent eng">¥1,660〜<span>/ 回</span></div></div>
+        </div>
+        <div class="why-price-note">※30分通い放題プラン・月30回通った場合</div>
       </div>
     </div>
 
+    <div class="why-divider"></div>
+
     <div class="why-item rv">
-      <div class="why-head"><div class="why-num">2</div><div class="why-title">30分だから<br>「忙しい」が言い訳にならない</div></div>
-      <p class="why-desc">一般的なジムは1回60〜90分。移動や着替えを入れると半日がかり。RESISTは1回30分、しかも手ぶらでOK。仕事前、昼休み、仕事帰り——スキマ時間でプロの指導が受けられます。</p>
-      <div class="why-compare">
-        <div class="why-compare-item"><div class="why-compare-label">一般的なジム</div><div class="why-compare-val muted">60〜90分</div></div>
-        <div class="why-compare-arrow">→</div>
-        <div class="why-compare-item"><div class="why-compare-label accent">RESIST</div><div class="why-compare-val accent-big">30<span>分</span></div></div>
+      <div class="why-num eng">02</div>
+      <h3 class="why-title">1回30分。<br>手ぶらで来て、手ぶらで帰る。</h3>
+      <p class="why-desc">ウェア・シューズ・タオルすべて無料。仕事前、昼休み、仕事帰り——カバンひとつで寄れるから「時間がない」がなくなります。</p>
+      <div class="why-time-compare">
+        <div class="why-time-item"><div class="why-time-label">一般的なジム</div><div class="why-time-val-muted">60〜90分</div></div>
+        <div class="why-time-arrow">→</div>
+        <div class="why-time-item"><div class="why-time-label why-accent">RESIST</div><div class="why-time-val-accent eng">30<span>分</span></div></div>
       </div>
     </div>
 
+    <div class="why-divider"></div>
+
     <div class="why-item rv">
-      <div class="why-head"><div class="why-num">3</div><div class="why-title">「今日の自分」に<br>合わせて選べる</div></div>
-      <p class="why-desc">筋トレ・ピラティス・ストレッチを毎回自由に選べます。しっかり追い込みたい日は筋トレ、疲れた日はストレッチだけ。「今日はキツいからやめよう」ではなく「今日はストレッチにしよう」——この柔軟さが、運動を義務ではなく習慣に変えます。</p>
-      <div class="why-menus">
-        <div class="why-menu wm1"><div class="why-menu-name">鍛える</div><div class="why-menu-sub">筋トレ</div></div>
-        <div class="why-menu wm2"><div class="why-menu-name">整える</div><div class="why-menu-sub">ピラティス</div></div>
-        <div class="why-menu wm3"><div class="why-menu-name">ほぐす</div><div class="why-menu-sub">ストレッチ</div></div>
+      <div class="why-num eng">03</div>
+      <h3 class="why-title">疲れた日は、<br>ストレッチだけでもいい。</h3>
+      <p class="why-desc">筋トレ・ピラティス・ストレッチを毎回自由に選べます。「やめる」のではなく「今日はゆるく」。この柔軟さが、続く理由です。</p>
+      <div class="why-menu-row">
+        <div class="why-menu-col" style="border-bottom:2px solid var(--red)">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="5" y="17" width="30" height="4" rx="2" fill="#D93B30" opacity="0.6"/><rect x="2" y="13" width="7" height="12" rx="1.5" fill="#D93B30" opacity="0.45"/><rect x="31" y="13" width="7" height="12" rx="1.5" fill="#D93B30" opacity="0.45"/><circle cx="4" cy="19" r="3" fill="#D93B30" opacity="0.7"/><circle cx="36" cy="19" r="3" fill="#D93B30" opacity="0.7"/></svg>
+          <div class="why-menu-name">鍛える</div>
+        </div>
+        <div class="why-menu-col" style="border-bottom:2px solid #E8A63A">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="28" width="32" height="3" rx="1" fill="#E8A63A" opacity="0.5"/><rect x="6" y="24" width="28" height="4" rx="1" fill="#E8A63A" opacity="0.35"/><rect x="3" y="22" width="3" height="10" rx="1" fill="#E8A63A" opacity="0.6"/><rect x="34" y="22" width="3" height="10" rx="1" fill="#E8A63A" opacity="0.6"/><rect x="7" y="18" width="10" height="5" rx="1" fill="#E8A63A" opacity="0.45"/><path d="M8 22 L8 16 Q8 14 10 14 L14 14" stroke="#E8A63A" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/><path d="M32 22 L32 16 Q32 14 30 14 L28 14" stroke="#E8A63A" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/><line x1="10" y1="31" x2="10" y2="34" stroke="#E8A63A" stroke-width="2" stroke-linecap="round" opacity="0.4"/><line x1="30" y1="31" x2="30" y2="34" stroke="#E8A63A" stroke-width="2" stroke-linecap="round" opacity="0.4"/></svg>
+          <div class="why-menu-name">整える</div>
+        </div>
+        <div class="why-menu-col" style="border-bottom:2px solid #4DAA6E">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><line x1="4" y1="28" x2="16" y2="22" stroke="#4DAA6E" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/><line x1="36" y1="28" x2="24" y2="22" stroke="#4DAA6E" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/><path d="M20 22 Q20 16 20 14" stroke="#4DAA6E" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.5"/><circle cx="20" cy="12" r="3" fill="#4DAA6E" opacity="0.55"/><line x1="17" y1="16" x2="10" y2="24" stroke="#4DAA6E" stroke-width="2" stroke-linecap="round" opacity="0.4"/><line x1="23" y1="16" x2="30" y2="24" stroke="#4DAA6E" stroke-width="2" stroke-linecap="round" opacity="0.4"/><circle cx="4" cy="29" r="1.5" fill="#4DAA6E" opacity="0.4"/><circle cx="36" cy="29" r="1.5" fill="#4DAA6E" opacity="0.4"/></svg>
+          <div class="why-menu-name">ほぐす</div>
+        </div>
       </div>
     </div>
 
+    <div class="why-divider"></div>
+
     <div class="why-item rv">
-      <div class="why-head"><div class="why-num">4</div><div class="why-title">完全マンツーマンだから<br>30分で100%の効果</div></div>
-      <p class="why-desc">24時間ジムでは「何をすればいいかわからない」、グループレッスンでは「自分のペースでできない」。RESISTはプロのトレーナーが1対1であなた専用のメニューを組み、正しいフォームで指導。30分間すべてがあなたのための時間です。</p>
+      <div class="why-num eng">04</div>
+      <h3 class="why-title">あなた専用の30分。<br>完全マンツーマン。</h3>
+      <p class="why-desc">プロのトレーナーが1対1で、あなたの体力と目標に合わせたメニューを組みます。正しいフォームで、30分すべてがあなたのための時間です。</p>
+      <div class="why-data-center">
+        <svg width="120" height="56" viewBox="0 0 120 56" fill="none"><circle cx="38" cy="16" r="7" fill="#D93B30" opacity="0.55"/><path d="M38 24 C38 24 30 30 28 38 C27 42 30 44 33 42 L38 36 L43 42 C46 44 49 42 48 38 C46 30 38 24 38 24Z" fill="#D93B30" opacity="0.35"/><circle cx="82" cy="16" r="7" fill="#E87A3A" opacity="0.55"/><path d="M82 24 C82 24 74 30 72 38 C71 42 74 44 77 42 L82 36 L87 42 C90 44 93 42 92 38 C90 30 82 24 82 24Z" fill="#E87A3A" opacity="0.35"/><path d="M50 30 L70 30" stroke="#D93B30" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.35"/><text x="60" y="50" text-anchor="middle" font-size="11" fill="#999" font-family="sans-serif">1 : 1</text></svg>
+      </div>
     </div>
 
-    <div style="margin-top:28px" class="rv">
+    <div style="margin-top:32px" class="rv">
       <a href="https://resist-official.stores.jp/reserve/kitaurawa/2139246/book/course_type" target="_blank" rel="noopener" class="cta">無料体験を予約する →</a>
       <span class="cn">まずは体験で、続けられる実感を</span>
     </div>
