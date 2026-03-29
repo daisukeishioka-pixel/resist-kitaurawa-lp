@@ -204,6 +204,23 @@ img{max-width:100%;height:auto;display:block}
 .rv{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
 .rv.vis{opacity:1;transform:translateY(0)}
 @media(min-width:480px){.hero h1{font-size:28px}.st{font-size:24px}}
+
+/* REVIEWS CAROUSEL */
+.review-carousel{position:relative;overflow:hidden;margin:0 -20px;padding:0 20px}
+.review-track{display:flex;transition:transform .35s cubic-bezier(.25,.46,.45,.94);touch-action:pan-y;cursor:grab}
+.review-track.grabbing{cursor:grabbing;transition:none}
+.review-slide{min-width:100%;padding:0 6px;box-sizing:border-box;flex-shrink:0}
+.review-card{background:var(--white);border:1px solid var(--border);border-radius:var(--rl);padding:24px;box-shadow:var(--shadow);height:100%}
+.review-header{display:flex;align-items:center;gap:12px;margin-bottom:14px;position:relative}
+.review-avatar{width:40px;height:40px;border-radius:50%;background:var(--grad);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Outfit',sans-serif;font-weight:700;font-size:16px;flex-shrink:0}
+.review-name{font-size:14px;font-weight:600}
+.review-stars{color:#FBBC04;font-size:13px;letter-spacing:1px}
+.review-google-icon{width:20px;height:20px;position:absolute;right:0;top:0;opacity:.5}
+.review-text{font-size:14px;color:var(--sub);line-height:1.9}
+.review-dots{display:flex;justify-content:center;gap:8px;margin-top:20px}
+.review-dot{width:8px;height:8px;border-radius:50%;background:var(--border);border:none;cursor:pointer;transition:all .3s;padding:0}
+.review-dot.active{background:var(--red);width:24px;border-radius:4px}
+.review-glink{display:block;text-align:center;margin-top:20px;font-size:13px;color:var(--red);text-decoration:none;font-weight:500}
 </style>
 </head>
 <body>
@@ -281,6 +298,100 @@ img{max-width:100%;height:auto;display:block}
   <h2 class="st rv">あなたの変化を、<br><span class="hl">共に喜ぶパートナー</span></h2>
   <div class="tr-c rv"><img src="https://storage.googleapis.com/studio-design-asset-files/projects/7kadzvkbO3/s-3375x3375_3ac1b87c-1f56-4280-abb1-1140cb4f5ef7.webp" alt="田村京椰トレーナー" loading="lazy"><div class="tr-b"><p class="tr-en eng">Kyoya Tamura</p><h3 class="tr-nm">田村 京椰</h3><p class="tr-ct">楽しさと継続力で理想を実現！</p><p class="tr-d">忙しい日々でも無理なく取り組めるメニュー設計が得意。ポジティブな声かけと、きめ細かなサポートで、トレーニングが生活の一部に。モチベーションの波に寄り添いながら、継続する楽しさと確かな成果をご提案します。</p><p class="tr-cr">【実績】サマースタイルアワード 5位入賞<br>【資格】JATI（日本トレーニング指導者協会認定）取得</p></div></div>
 </div></section>
+
+<!-- ═══ GOOGLE REVIEWS ═══ -->
+<section class="s" id="reviews-google">
+  <div class="w">
+    <p class="sl rv" style="text-align:center">Google Reviews</p>
+    <h2 class="st rv" style="text-align:center">
+      Google口コミ <span class="hl">★ 4.8</span>
+    </h2>
+    <p style="text-align:center;font-size:13px;color:var(--muted);margin-bottom:24px" class="rv">
+      実際にご来店いただいたお客様のリアルな声をご紹介します
+    </p>
+
+    <div class="review-carousel rv" id="reviewCarousel">
+      <div class="review-track" id="reviewTrack">
+
+        <div class="review-slide">
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">K</div>
+              <div>
+                <div class="review-name">K.M さん</div>
+                <div class="review-stars">★★★★★</div>
+              </div>
+              <img src="https://www.google.com/favicon.ico" alt="Google" class="review-google-icon">
+            </div>
+            <p class="review-text">初回体験を受けました。カウンセリングが丁寧で、トレーナーさんも明るく話しやすく、安心できました。筋トレで久々に身体を追い込めて気持ちよかったです！施設は清潔で、北浦和駅からアクセスも良好なので通いやすいです。</p>
+          </div>
+        </div>
+
+        <div class="review-slide">
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">S</div>
+              <div>
+                <div class="review-name">S.T さん</div>
+                <div class="review-stars">★★★★★</div>
+              </div>
+              <img src="https://www.google.com/favicon.ico" alt="Google" class="review-google-icon">
+            </div>
+            <p class="review-text">ピラティスとストレッチで心身ともにリフレッシュできました！トレーナーさんが明るく話しやすく、丁寧なカウンセリングで安心感がありました。短い時間でもしっかりトレーニングできて満足です。</p>
+          </div>
+        </div>
+
+        <div class="review-slide">
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">A</div>
+              <div>
+                <div class="review-name">A.Y さん</div>
+                <div class="review-stars">★★★★★</div>
+              </div>
+              <img src="https://www.google.com/favicon.ico" alt="Google" class="review-google-icon">
+            </div>
+            <p class="review-text">北浦和でピラティスを始めましたが、トレーニングが楽しく、毎回成長を実感しています。信頼できるトレーナーが親身になって相談にのってくれ、フォームもしっかり見てくれるので安心して続けられます。</p>
+          </div>
+        </div>
+
+        <div class="review-slide">
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">R</div>
+              <div>
+                <div class="review-name">R.N さん</div>
+                <div class="review-stars">★★★★★</div>
+              </div>
+              <img src="https://www.google.com/favicon.ico" alt="Google" class="review-google-icon">
+            </div>
+            <p class="review-text">北浦和駅からアクセスも良く、手ぶらで行けるのが嬉しいです。トレーナーさんがストレッチ、ピラティス、筋トレを丁寧に指導してくれて、短時間でもしっかりトレーニングできました。清潔感もあって通いやすい！</p>
+          </div>
+        </div>
+
+        <div class="review-slide">
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">M</div>
+              <div>
+                <div class="review-name">M.H さん</div>
+                <div class="review-stars">★★★★★</div>
+              </div>
+              <img src="https://www.google.com/favicon.ico" alt="Google" class="review-google-icon">
+            </div>
+            <p class="review-text">効果的なプログラムのおかげで身体がリフレッシュしました。カウンセリングも丁寧で、今後の目標に向けたアドバイスもいただけました。施設も清潔で、ウェアやシューズの無料レンタルが便利です。</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="review-dots" id="reviewDots"></div>
+    </div>
+
+    <a href="https://www.google.com/maps/place/?q=place_id:ChIJoRaksL_BGGARBacjf3eKzuY" target="_blank" rel="noopener" class="review-glink rv">
+      Google Mapsで全ての口コミを見る →
+    </a>
+  </div>
+</section>
 
 <section class="s"><div class="w">
   <p class="sl rv">Comparison</p>
@@ -381,6 +492,49 @@ const form=document.getElementById('tf'),sb=document.getElementById('sb'),fok=do
 form.querySelector('input[name="date"]').setAttribute('min',new Date().toISOString().split('T')[0]);
 form.addEventListener('submit',async e=>{e.preventDefault();const n=form.querySelector('input[name="name"]').value.trim(),p=form.querySelector('input[name="phone"]').value.trim(),em=form.querySelector('input[name="email"]').value.trim(),d=form.querySelector('input[name="date"]').value,t=form.querySelector('select[name="time"]').value;if(!n||!p||!em||!d||!t){alert('必須項目をすべて入力してください。');return}sb.disabled=true;sb.textContent='送信中...';try{await new Promise(r=>setTimeout(r,800));if(typeof fbq!=='undefined'){fbq('track','Lead',{content_name:'RESIST北浦和_体験予約',content_category:'trial_booking'})}form.style.display='none';fok.classList.add('show')}catch(err){alert('送信に失敗しました。もう一度お試しください。');sb.disabled=false;sb.textContent='無料体験を予約する'}});
 document.querySelectorAll('a[href="#trial-form"]').forEach(l=>{l.addEventListener('click',e=>{e.preventDefault();document.getElementById('trial-form').scrollIntoView({behavior:'smooth'})})});
+
+// Reviews Carousel with swipe
+(function(){
+  const track=document.getElementById('reviewTrack');
+  const dotsC=document.getElementById('reviewDots');
+  if(!track||!dotsC) return;
+  const slides=track.querySelectorAll('.review-slide');
+  const total=slides.length;
+  let current=0, startX=0, moveX=0, isDragging=false;
+
+  // Create dots
+  for(let i=0;i<total;i++){
+    const dot=document.createElement('button');
+    dot.className='review-dot'+(i===0?' active':'');
+    dot.setAttribute('aria-label','口コミ '+(i+1));
+    dot.addEventListener('click',()=>goTo(i));
+    dotsC.appendChild(dot);
+  }
+
+  function goTo(i){
+    current=Math.max(0,Math.min(i,total-1));
+    track.style.transform='translateX(-'+current*100+'%)';
+    dotsC.querySelectorAll('.review-dot').forEach((d,idx)=>{
+      d.classList.toggle('active',idx===current);
+    });
+  }
+
+  // Touch events
+  track.addEventListener('touchstart',e=>{startX=e.touches[0].clientX;isDragging=true;track.classList.add('grabbing')},{passive:true});
+  track.addEventListener('touchmove',e=>{if(!isDragging)return;moveX=e.touches[0].clientX-startX},{passive:true});
+  track.addEventListener('touchend',()=>{if(!isDragging)return;isDragging=false;track.classList.remove('grabbing');if(Math.abs(moveX)>50){moveX<0?goTo(current+1):goTo(current-1)}moveX=0});
+
+  // Mouse events for desktop
+  track.addEventListener('mousedown',e=>{startX=e.clientX;isDragging=true;track.classList.add('grabbing');e.preventDefault()});
+  track.addEventListener('mousemove',e=>{if(!isDragging)return;moveX=e.clientX-startX});
+  track.addEventListener('mouseup',()=>{if(!isDragging)return;isDragging=false;track.classList.remove('grabbing');if(Math.abs(moveX)>50){moveX<0?goTo(current+1):goTo(current-1)}moveX=0});
+  track.addEventListener('mouseleave',()=>{if(isDragging){isDragging=false;track.classList.remove('grabbing');moveX=0}});
+
+  // Auto-play
+  let autoplay=setInterval(()=>goTo((current+1)%total),5000);
+  track.parentElement.addEventListener('mouseenter',()=>clearInterval(autoplay));
+  track.parentElement.addEventListener('mouseleave',()=>{autoplay=setInterval(()=>goTo((current+1)%total),5000)});
+})();
 </script>
 </body>
 </html>
