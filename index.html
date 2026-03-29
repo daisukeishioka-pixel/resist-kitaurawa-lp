@@ -155,25 +155,24 @@ img{max-width:100%;height:auto;display:block}
 .ctb tbody tr:last-child td{border-bottom:none}
 
 /* PRICE */
-.price-compact{background:var(--white);border:1.5px solid var(--border);border-radius:var(--rl);overflow:hidden}
-.price-compact-main{padding:24px 20px 16px;text-align:center;position:relative}
-.price-compact-badge{display:inline-block;background:var(--grad);color:#fff;font-size:11px;font-weight:700;padding:3px 14px;border-radius:16px;margin-bottom:8px}
-.price-compact-name{font-size:15px;font-weight:700;margin-bottom:4px}
-.price-compact-amount{font-family:'Outfit',sans-serif;font-size:36px;font-weight:800;line-height:1.2}
-.price-compact-tax{font-size:13px;font-weight:400;color:var(--muted)}
-.price-compact-per{font-size:12px;color:var(--sub);margin-top:6px}
-.price-compact-list{display:flex;flex-wrap:wrap;gap:6px;padding:12px 20px 20px;justify-content:center}
-.price-compact-list span{font-size:11px;color:var(--sub);background:var(--bg);padding:4px 10px;border-radius:20px;border:1px solid var(--border)}
-.price-details{margin-top:12px;border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
-.price-details summary{padding:14px 20px;font-size:14px;font-weight:600;cursor:pointer;color:var(--sub);list-style:none;text-align:center}
-.price-details summary::after{content:' ▼';font-size:10px;color:var(--muted)}
-.price-details[open] summary::after{content:' ▲'}
-.price-details-grid{padding:0 16px 16px}
-.price-details-item{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)}
-.price-details-item:last-child{border-bottom:none}
-.pdi-name{font-size:13px;font-weight:500}
-.pdi-price{font-size:18px;font-weight:700}
-.pdi-tax{font-size:11px;color:var(--muted);margin-left:2px}
+.price-label{font-size:13px;font-weight:600;color:var(--text);margin-bottom:12px;padding-left:2px}
+.price-unlimited{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:20px;margin-bottom:10px;position:relative}
+.price-unlimited-main{border:1.5px solid var(--red)}
+.price-unlimited-badge{position:absolute;top:-10px;left:20px;background:var(--grad);color:#fff;font-size:10px;font-weight:600;padding:2px 12px;border-radius:10px}
+.price-unlimited-inner{display:flex;justify-content:space-between;align-items:center}
+.price-unlimited-name{font-size:15px;font-weight:600}
+.price-unlimited-note{font-size:11px;color:var(--muted);margin-top:2px}
+.price-unlimited-right{text-align:right}
+.price-unlimited-amount{font-size:28px;font-weight:700;color:var(--red);line-height:1}
+.price-unlimited-amount-sub{color:var(--text)}
+.price-unlimited-tax{font-size:11px;color:var(--muted)}
+.price-divider{width:100%;height:1px;background:var(--border);margin:28px 0 20px}
+.price-row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--border)}
+.price-row-last{border-bottom:none}
+.price-row-name{font-size:14px;font-weight:500}
+.price-row-amount{font-size:18px;font-weight:700}
+.price-row-amount span{font-size:11px;color:var(--muted);font-weight:400}
+.price-note{font-size:11px;color:var(--muted);margin-top:8px}
 
 /* FLOW */
 .fs{display:flex;gap:18px;margin-bottom:28px;position:relative}
@@ -596,28 +595,59 @@ img{max-width:100%;height:auto;display:block}
   <div class="w">
     <p class="sl rv" style="text-align:center">Price</p>
     <h2 class="st rv" style="text-align:center"><span class="hl">料金プラン</span></h2>
-    <div class="price-compact rv">
-      <div class="price-compact-main">
-        <div class="price-compact-badge">一番人気</div>
-        <p class="price-compact-name">30分コース 通い放題プラン</p>
-        <p class="price-compact-amount"><span class="hl eng">¥49,800</span><span class="price-compact-tax">/月（税込）</span></p>
-        <p class="price-compact-per">通えば通うほどお得。月30回通えば<span style="color:var(--red);font-weight:600">1回あたり約1,660円</span></p>
-      </div>
-      <div class="price-compact-list">
-        <span>通い放題</span><span>完全マンツーマン</span><span>ウェア無料</span><span>当日予約OK</span><span>食事サポート</span><span>契約縛りなし</span>
+
+    <div class="price-label rv">通い放題プラン</div>
+
+    <div class="price-unlimited price-unlimited-main rv">
+      <div class="price-unlimited-badge">一番人気</div>
+      <div class="price-unlimited-inner">
+        <div class="price-unlimited-info">
+          <div class="price-unlimited-name">30分コース</div>
+          <div class="price-unlimited-note">通い放題・契約縛りなし</div>
+        </div>
+        <div class="price-unlimited-right">
+          <div class="price-unlimited-amount eng">¥49,800</div>
+          <div class="price-unlimited-tax">/月（税込）</div>
+        </div>
       </div>
     </div>
-    <details class="price-details rv">
-      <summary>その他のプランを見る</summary>
-      <div class="price-details-grid">
-        <div class="price-details-item"><span class="pdi-name">60分 通い放題</span><span class="pdi-price eng">¥99,600</span><span class="pdi-tax">/月</span></div>
-        <div class="price-details-item"><span class="pdi-name">30分 月2回</span><span class="pdi-price eng">¥14,000</span><span class="pdi-tax">/月</span></div>
-        <div class="price-details-item"><span class="pdi-name">30分 月4回</span><span class="pdi-price eng">¥27,000</span><span class="pdi-tax">/月</span></div>
-        <div class="price-details-item"><span class="pdi-name">60分 月2回</span><span class="pdi-price eng">¥28,000</span><span class="pdi-tax">/月</span></div>
-        <div class="price-details-item"><span class="pdi-name">60分 月4回</span><span class="pdi-price eng">¥54,000</span><span class="pdi-tax">/月</span></div>
+
+    <div class="price-unlimited rv">
+      <div class="price-unlimited-inner">
+        <div class="price-unlimited-info">
+          <div class="price-unlimited-name">60分コース</div>
+          <div class="price-unlimited-note">通い放題・予約枠無制限</div>
+        </div>
+        <div class="price-unlimited-right">
+          <div class="price-unlimited-amount price-unlimited-amount-sub eng">¥99,600</div>
+          <div class="price-unlimited-tax">/月（税込）</div>
+        </div>
       </div>
-      <p style="font-size:11px;color:var(--muted);margin-top:8px">※表示価格はすべて税込です</p>
-    </details>
+    </div>
+
+    <div class="price-divider rv"></div>
+
+    <div class="price-label rv">回数プラン</div>
+
+    <div class="price-row rv">
+      <div class="price-row-name">30分 月2回</div>
+      <div class="price-row-amount eng">¥14,000<span> /月</span></div>
+    </div>
+    <div class="price-row rv">
+      <div class="price-row-name">30分 月4回</div>
+      <div class="price-row-amount eng">¥27,000<span> /月</span></div>
+    </div>
+    <div class="price-row rv">
+      <div class="price-row-name">60分 月2回</div>
+      <div class="price-row-amount eng">¥28,000<span> /月</span></div>
+    </div>
+    <div class="price-row price-row-last rv">
+      <div class="price-row-name">60分 月4回</div>
+      <div class="price-row-amount eng">¥54,000<span> /月</span></div>
+    </div>
+
+    <p class="price-note rv">※表示価格はすべて税込です</p>
+
     <div style="margin-top:24px" class="rv">
       <a href="https://resist-official.stores.jp/reserve/kitaurawa/2139246/book/course_type" target="_blank" rel="noopener" class="cta">まずは無料体験から →</a>
       <span class="cn">体験当日のご入会で入会金無料</span>
