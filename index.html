@@ -103,13 +103,29 @@ img{max-width:100%;height:auto;display:block}
 .why-menu-col svg{margin:0 auto 8px;display:block}
 .why-menu-name{font-size:14px;font-weight:600}
 
-/* MENU CARDS */
-.menu-card{background:var(--white);border-radius:var(--rl);overflow:hidden;margin-bottom:12px;box-shadow:var(--shadow);border:1px solid var(--border);display:flex;align-items:center;gap:0}
-.menu-img{width:120px;height:100px;object-fit:cover;flex-shrink:0}
-.menu-body{padding:12px 16px;flex:1}
-.menu-name{font-size:16px;font-weight:700;margin-bottom:1px}
-.menu-sub{font-size:11px;color:var(--muted);margin-bottom:4px}
-.menu-desc{font-size:12px;color:var(--sub);line-height:1.7}
+/* METHOD */
+.method-sec{background:var(--bg-warm)}
+.method-item{margin-bottom:36px}
+.method-num{font-size:36px;font-weight:500;color:#ddd;margin-bottom:8px;line-height:1}
+.method-title{font-size:17px;font-weight:700;line-height:1.55;margin-bottom:12px}
+.method-desc{font-size:13px;color:#777;line-height:1.9;margin-bottom:20px}
+.method-divider{width:100%;height:1px;background:#E5E2DE;margin-bottom:36px}
+.method-visual{background:var(--white);border-radius:var(--r);padding:20px;text-align:center}
+.method-combine{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:12px}
+.method-combine-item{border-radius:8px;padding:10px 16px;text-align:center}
+.method-combine-item svg{margin:0 auto 4px;display:block}
+.method-combine-item span{font-size:12px;font-weight:600}
+.method-combine-x{font-size:18px;font-weight:500;color:var(--red)}
+.method-combine-result{font-size:12px;color:var(--muted);line-height:1.6}
+.method-bars{display:flex;justify-content:center;gap:4px;margin-bottom:12px}
+.method-bar{width:48px;height:6px;border-radius:3px;background:var(--red)}
+.method-formula{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:8px}
+.method-formula-item{text-align:center}
+.method-formula-item svg{margin:0 auto 4px;display:block}
+.method-formula-item span{font-size:11px;color:var(--muted)}
+.method-formula-plus{font-size:14px;color:#ddd}
+.method-formula-arrow{font-size:20px;color:var(--red);margin:8px 0 4px}
+.method-formula-result{font-size:13px;font-weight:600;color:var(--red)}
 
 /* BA */
 .ba{border-radius:var(--rl);overflow:hidden;margin-bottom:16px;box-shadow:var(--shadow-lg);border:1px solid var(--border);background:var(--white)}
@@ -445,20 +461,74 @@ img{max-width:100%;height:auto;display:block}
   </div>
 </section>
 
-<section class="s" style="background:var(--bg)" id="concept"><div class="w">
-  <p class="sl rv" style="text-align:center">Menu</p>
-  <h2 class="st rv" style="text-align:center">その日の自分に合わせて選べる<br><span class="hl">3つのメニュー</span></h2>
-    <div class="menu-card rv">
-      <img src="./pillar-training.jpg" alt="パーソナルトレーニング" loading="lazy" class="menu-img">
-      <div class="menu-body"><h3 class="menu-name">鍛える</h3><p class="menu-sub">パーソナルトレーニング</p><p class="menu-desc">あなたの目標と体力に合わせた完全オーダーメイド。正しいフォームで効率よく身体を変えます。</p></div>
+<section class="s method-sec" id="method">
+  <div class="w">
+    <p class="sl rv" style="text-align:center">Method</p>
+    <h2 class="st rv" style="text-align:center">短時間で効率的に変われる、<br><span class="hl">RESISTのメソッド</span></h2>
+
+    <div class="method-item rv">
+      <div class="method-num eng">01</div>
+      <h3 class="method-title">筋トレ × ピラティスで、<br>根本原因に最短距離でアプローチ。</h3>
+      <p class="method-desc">筋トレだけでは姿勢の歪みは治らない。ピラティスだけでは筋力は付かない。RESISTは両方を組み合わせることで、「鍛える」と「整える」を同時に実現。表面的な変化ではなく、身体の根本から変えていきます。</p>
+      <div class="method-visual">
+        <div class="method-combine">
+          <div class="method-combine-item" style="background:#FFF5F3">
+            <svg width="32" height="32" viewBox="0 0 40 40" fill="none"><rect x="5" y="17" width="30" height="4" rx="2" fill="#D93B30" opacity="0.6"/><rect x="2" y="13" width="7" height="12" rx="1.5" fill="#D93B30" opacity="0.45"/><rect x="31" y="13" width="7" height="12" rx="1.5" fill="#D93B30" opacity="0.45"/><circle cx="4" cy="19" r="3" fill="#D93B30" opacity="0.7"/><circle cx="36" cy="19" r="3" fill="#D93B30" opacity="0.7"/></svg>
+            <span>筋トレ</span>
+          </div>
+          <div class="method-combine-x">×</div>
+          <div class="method-combine-item" style="background:#FFF9F0">
+            <svg width="32" height="32" viewBox="0 0 40 40" fill="none"><rect x="4" y="28" width="32" height="3" rx="1" fill="#E8A63A" opacity="0.5"/><rect x="6" y="24" width="28" height="4" rx="1" fill="#E8A63A" opacity="0.35"/><rect x="3" y="22" width="3" height="10" rx="1" fill="#E8A63A" opacity="0.6"/><rect x="34" y="22" width="3" height="10" rx="1" fill="#E8A63A" opacity="0.6"/><rect x="7" y="18" width="10" height="5" rx="1" fill="#E8A63A" opacity="0.45"/><path d="M8 22 L8 16 Q8 14 10 14 L14 14" stroke="#E8A63A" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/><path d="M32 22 L32 16 Q32 14 30 14 L28 14" stroke="#E8A63A" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/><line x1="10" y1="31" x2="10" y2="34" stroke="#E8A63A" stroke-width="2" stroke-linecap="round" opacity="0.4"/><line x1="30" y1="31" x2="30" y2="34" stroke="#E8A63A" stroke-width="2" stroke-linecap="round" opacity="0.4"/></svg>
+            <span>ピラティス</span>
+          </div>
+        </div>
+        <div class="method-combine-result">鍛える × 整える = 根本から変わる</div>
+      </div>
     </div>
-    <div class="menu-card rv">
-      <img src="./pillar-pilates.jpg" alt="マシンピラティス" loading="lazy" class="menu-img">
-      <div class="menu-body"><h3 class="menu-name">整える</h3><p class="menu-sub">マット・マシンピラティス</p><p class="menu-desc">リフォーマーでインナーマッスルを鍛え、身体の歪みを整えます。姿勢改善に。</p></div>
+
+    <div class="method-divider"></div>
+
+    <div class="method-item rv">
+      <div class="method-num eng">02</div>
+      <h3 class="method-title">長時間がいいわけじゃない。<br>短時間で効く、独自メニュー。</h3>
+      <p class="method-desc">RESISTでは、トレーニングの回数・強度・実施方法を常に試行錯誤し、30分という短時間でも最大の効果を引き出すオリジナルメニューを開発してきました。無駄な休憩、無駄な種目はゼロ。短時間だからこそ集中でき、結果につながります。</p>
+      <div class="method-visual">
+        <div class="method-bars">
+          <div class="method-bar" style="opacity:.8"></div>
+          <div class="method-bar" style="opacity:.6"></div>
+          <div class="method-bar" style="opacity:.4"></div>
+          <div class="method-bar" style="opacity:.2"></div>
+        </div>
+        <div class="method-combine-result">30分に凝縮された<br>RESIST独自のプログラム設計</div>
+      </div>
     </div>
-    <div class="menu-card rv">
-      <img src="./pillar-stretch.jpg" alt="パーソナルストレッチ" loading="lazy" class="menu-img">
-      <div class="menu-body"><h3 class="menu-name">ほぐす</h3><p class="menu-sub">パーソナルストレッチ</p><p class="menu-desc">疲れた日やリフレッシュしたい日に。ストレッチだけの日も大丈夫です。</p></div>
+
+    <div class="method-divider"></div>
+
+    <div class="method-item rv">
+      <div class="method-num eng">03</div>
+      <h3 class="method-title">完全個室 × マンツーマン。<br>だから、1回の質が違う。</h3>
+      <p class="method-desc">周囲を気にせず集中できる完全個室。そしてプロのトレーナーがあなただけを見る完全マンツーマン。この環境だからこそ、1セッションの質と量が担保でき、30分でも確かな変化を生み出せます。</p>
+      <div class="method-visual">
+        <div class="method-formula">
+          <div class="method-formula-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="#D93B30" stroke-width="1.5" opacity="0.5" fill="none"/><rect x="7" y="7" width="10" height="10" rx="2" fill="#D93B30" opacity="0.2"/></svg>
+            <span>完全個室</span>
+          </div>
+          <div class="method-formula-plus">+</div>
+          <div class="method-formula-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.5" fill="#D93B30" opacity="0.4"/><path d="M12 12 C12 12 6 16 5 20" stroke="#D93B30" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/><path d="M12 12 C12 12 18 16 19 20" stroke="#D93B30" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/></svg>
+            <span>マンツーマン</span>
+          </div>
+        </div>
+        <div class="method-formula-arrow">↓</div>
+        <div class="method-formula-result">1セッションの質と量を最大化</div>
+      </div>
+    </div>
+
+    <div style="margin-top:32px" class="rv">
+      <a href="https://resist-official.stores.jp/reserve/kitaurawa/2139246/book/course_type" target="_blank" rel="noopener" class="cta">無料体験を予約する →</a>
+      <span class="cn">30分で変わる体験を、まず一度</span>
     </div>
   </div>
 </section>
