@@ -59,11 +59,11 @@ img{max-width:100%;height:auto;display:block}
 .hci-old{display:block;font-size:10px;color:var(--muted);text-decoration:line-through}
 .hci-new{display:block;font-size:20px;font-weight:800;color:var(--red);font-family:'Outfit',sans-serif;line-height:1.2}
 
-.tk{background:var(--bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;white-space:nowrap;padding:10px 0}
-.tk-inner{display:inline-flex;animation:tkscroll 18s linear infinite}
-.tk-inner span{font-size:12px;font-weight:600;color:var(--muted);padding:0 20px;display:inline-flex;align-items:center;gap:6px}
-.tk-inner span::before{content:'';width:5px;height:5px;background:var(--red);border-radius:50%;flex-shrink:0}
-@keyframes tkscroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.feature-icons{background:var(--bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:28px 24px}
+.feature-icons-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px 8px;max-width:480px;margin:0 auto}
+.feature-icon-item{text-align:center}
+.feature-icon-item svg{margin:0 auto 6px;display:block}
+.feature-icon-item span{font-size:11px;font-weight:500;color:var(--sub)}
 
 @media(min-width:480px){.hero h1{font-size:30px}.hero-photo{height:560px}.hero-overlay{height:560px}.hero-body{margin-top:-110px}}
 
@@ -277,7 +277,42 @@ img{max-width:100%;height:auto;display:block}
   </div>
 </section>
 
-<div class="tk" aria-hidden="true"><div class="tk-inner"><span>通い放題</span><span>完全個室</span><span>手ぶらOK</span><span>30分からOK</span><span>当日予約OK</span><span>ウェアレンタル無料</span><span>お子様連れ歓迎</span><span>ペアトレーニング可</span><span>通い放題</span><span>完全個室</span><span>手ぶらOK</span><span>30分からOK</span><span>当日予約OK</span><span>ウェアレンタル無料</span><span>お子様連れ歓迎</span><span>ペアトレーニング可</span></div></div>
+<div class="feature-icons">
+  <div class="feature-icons-grid">
+    <div class="feature-icon-item">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="#D93B30" stroke-width="1.5" fill="none" opacity="0.4"/><path d="M16 6 A10 10 0 1 1 16 26 A10 10 0 1 1 16 6" stroke="#D93B30" stroke-width="1.5" stroke-dasharray="4 3" fill="none" opacity="0.25"/><text x="16" y="19" text-anchor="middle" font-size="9" fill="#D93B30" font-family="sans-serif" font-weight="500" opacity="0.7">∞</text></svg>
+      <span>通い放題</span>
+    </div>
+    <div class="feature-icon-item">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="6" y="6" width="20" height="20" rx="4" stroke="#D93B30" stroke-width="1.5" fill="none" opacity="0.4"/><rect x="10" y="10" width="12" height="12" rx="2" fill="#D93B30" opacity="0.15"/></svg>
+      <span>完全個室</span>
+    </div>
+    <div class="feature-icon-item">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M10 24 L10 12 Q10 8 16 8 Q22 8 22 12 L22 24" stroke="#D93B30" stroke-width="1.5" fill="none" opacity="0.4"/><line x1="8" y1="24" x2="24" y2="24" stroke="#D93B30" stroke-width="1.5" opacity="0.4"/><circle cx="16" cy="16" r="2" fill="#D93B30" opacity="0.3"/></svg>
+      <span>手ぶらOK</span>
+    </div>
+    <div class="feature-icon-item">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="11" stroke="#D93B30" stroke-width="1.5" fill="none" opacity="0.4"/><line x1="16" y1="16" x2="16" y2="9" stroke="#D93B30" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/><line x1="16" y1="16" x2="22" y2="16" stroke="#D93B30" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/><circle cx="16" cy="16" r="1.5" fill="#D93B30" opacity="0.5"/></svg>
+      <span>30分からOK</span>
+    </div>
+    <div class="feature-icon-item">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="7" y="6" width="18" height="20" rx="2" stroke="#D93B30" stroke-width="1.5" fill="none" opacity="0.4"/><line x1="11" y1="11" x2="21" y2="11" stroke="#D93B30" stroke-width="1" opacity="0.25"/><line x1="11" y1="15" x2="21" y2="15" stroke="#D93B30" stroke-width="1" opacity="0.25"/><line x1="11" y1="19" x2="17" y2="19" stroke="#D93B30" stroke-width="1" opacity="0.25"/><circle cx="22" cy="22" r="6" fill="#D93B30" opacity="0.15" stroke="#D93B30" stroke-width="1" stroke-opacity="0.4"/><text x="22" y="25" text-anchor="middle" font-size="8" fill="#D93B30" font-weight="500" opacity="0.6">OK</text></svg>
+      <span>当日予約OK</span>
+    </div>
+    <div class="feature-icon-item">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M12 10 L12 24 M20 10 L20 24" stroke="#D93B30" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/><path d="M8 12 L24 12 L22 22 L10 22 Z" stroke="#D93B30" stroke-width="1.5" fill="none" opacity="0.4"/><line x1="14" y1="8" x2="18" y2="8" stroke="#D93B30" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/></svg>
+      <span>ウェア無料</span>
+    </div>
+    <div class="feature-icon-item">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="12" cy="12" r="4" fill="#D93B30" opacity="0.3"/><path d="M12 17 C12 17 6 21 6 26" stroke="#D93B30" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/><path d="M12 17 C12 17 18 21 18 26" stroke="#D93B30" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/><circle cx="22" cy="14" r="3" fill="#D93B30" opacity="0.2"/><path d="M22 18 C22 18 18 21 17 25" stroke="#D93B30" stroke-width="1" stroke-linecap="round" opacity="0.25"/><path d="M22 18 C22 18 26 21 27 25" stroke="#D93B30" stroke-width="1" stroke-linecap="round" opacity="0.25"/></svg>
+      <span>お子様連れ歓迎</span>
+    </div>
+    <div class="feature-icon-item">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="12" cy="12" r="4.5" fill="#D93B30" opacity="0.3"/><circle cx="22" cy="12" r="4.5" fill="#D93B30" opacity="0.2"/><path d="M8 28 C8 22 10 18 12 17" stroke="#D93B30" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/><path d="M16 28 C16 22 14 18 12 17" stroke="#D93B30" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/><path d="M18 28 C18 22 20 18 22 17" stroke="#D93B30" stroke-width="1.5" stroke-linecap="round" opacity="0.25"/><path d="M26 28 C26 22 24 18 22 17" stroke="#D93B30" stroke-width="1.5" stroke-linecap="round" opacity="0.25"/></svg>
+      <span>ペアOK</span>
+    </div>
+  </div>
+</div>
 
 <!-- ═══ GOOGLE REVIEWS ═══ -->
 <section class="s" id="reviews-google">
