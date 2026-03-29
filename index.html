@@ -41,15 +41,22 @@ img{max-width:100%;height:auto;display:block}
 .cn{display:block;text-align:center;font-size:12px;color:var(--muted);margin-top:8px}
 
 /* HERO */
-.hero{background:var(--white)}
-.hero-img{width:100%;height:auto;max-height:480px;object-fit:cover}
-.hero-body{padding:28px 24px 40px}
-.hero-cp{display:inline-flex;align-items:center;gap:6px;background:var(--red);color:#fff;border-radius:6px;padding:5px 14px;font-size:12px;font-weight:700;margin-bottom:16px}
-.hero h1{font-size:24px;font-weight:900;line-height:1.55;margin-bottom:16px}
+.hero{position:relative;background:#fff;overflow:hidden}
+.hero-photo{position:relative;width:100%;height:420px;overflow:hidden}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-overlay{position:absolute;left:0;right:0;top:0;height:420px;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.02) 35%,rgba(255,255,255,0.6) 55%,rgba(255,255,255,0.92) 70%,#fff 82%);z-index:1;pointer-events:none}
+.hero-body{position:relative;z-index:2;margin-top:-120px;padding:0 24px 32px}
+.hero-cp{display:inline-block;background:var(--red);color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:4px;margin-bottom:12px}
+.hero h1{font-size:26px;font-weight:900;line-height:1.5;margin-bottom:8px;color:var(--text)}
 .hero h1 em{font-style:normal;color:var(--red)}
-.hero-sub{font-size:14px;color:var(--sub);line-height:1.9;margin-bottom:24px}
-.hero-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px}
-.hc{display:inline-flex;align-items:center;gap:3px;padding:5px 12px;background:var(--bg);border:1px solid var(--border);border-radius:40px;font-size:11px;font-weight:600;color:var(--sub)}
+.hero-sub{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:16px}
+.hero-campaign{background:linear-gradient(135deg,#FFF8F6,#FFF5F0);border:1.5px solid rgba(217,59,48,.15);border-radius:12px;padding:16px;margin-bottom:20px}
+.hero-campaign-label{text-align:center;font-size:12px;font-weight:700;color:var(--red);margin-bottom:10px;letter-spacing:.04em}
+.hero-campaign-grid{display:flex;gap:8px}
+.hero-campaign-item{flex:1;background:#fff;border-radius:8px;padding:10px 8px;text-align:center}
+.hci-label{display:block;font-size:10px;color:var(--muted)}
+.hci-old{display:block;font-size:10px;color:var(--muted);text-decoration:line-through}
+.hci-new{display:block;font-size:24px;font-weight:800;color:var(--red);font-family:'Outfit',sans-serif;line-height:1.2}
 
 .tk{background:var(--bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;white-space:nowrap;padding:10px 0}
 .tk-inner{display:inline-flex;animation:tkscroll 18s linear infinite}
@@ -57,16 +64,7 @@ img{max-width:100%;height:auto;display:block}
 .tk-inner span::before{content:'';width:5px;height:5px;background:var(--red);border-radius:50%;flex-shrink:0}
 @keyframes tkscroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-/* CAMPAIGN */
-.cp{background:var(--bg-accent);border:2px solid rgba(217,59,48,.12);border-radius:var(--rl);padding:28px 24px;text-align:center}
-.cp-badge{display:inline-block;background:var(--grad);color:#fff;font-size:11px;font-weight:700;padding:3px 16px;border-radius:20px;margin-bottom:12px;letter-spacing:.06em}
-.cp-title{font-size:18px;font-weight:700;line-height:1.5;margin-bottom:16px}
-.cp-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
-.cp-item{background:var(--white);border-radius:var(--r);padding:16px 12px;text-align:center;box-shadow:var(--shadow)}
-.cp-lbl{font-size:11px;color:var(--muted);margin-bottom:2px}
-.cp-old{font-size:12px;color:var(--muted);text-decoration:line-through}
-.cp-new{font-size:28px;font-weight:800;color:var(--red);font-family:'Outfit',sans-serif;line-height:1.2}
-.cp-note{font-size:11px;color:var(--muted);line-height:1.6}
+@media(min-width:480px){.hero h1{font-size:30px}.hero-photo{height:480px}.hero-overlay{height:480px}.hero-body{margin-top:-140px}}
 
 /* PAIN */
 .pain{background:var(--bg)}
@@ -183,7 +181,7 @@ img{max-width:100%;height:auto;display:block}
 
 .rv{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
 .rv.vis{opacity:1;transform:translateY(0)}
-@media(min-width:480px){.hero h1{font-size:28px}.st{font-size:24px}}
+@media(min-width:480px){.st{font-size:24px}}
 
 /* REVIEWS CAROUSEL */
 .review-carousel{position:relative;overflow:hidden}
@@ -211,30 +209,35 @@ img{max-width:100%;height:auto;display:block}
 <body>
 
 <section class="hero">
-  <img class="hero-img" src="./hero-resist-kitaurawa.png" alt="RESIST北浦和店" loading="eager">
+  <div class="hero-photo">
+    <img src="./pillar-training.jpg" alt="RESIST北浦和店 パーソナルトレーニング風景" loading="eager">
+  </div>
+  <div class="hero-overlay"></div>
   <div class="hero-body">
-    <div class="hero-cp">🎁 今なら体験無料キャンペーン実施中</div>
-    <h1>完全マンツーマンで、<br>筋トレとピラティスが<br><em>通い放題</em>のパーソナルジム</h1>
-    <p class="hero-sub">「運動が続かない」「何から始めていいかわからない」<br>そんな方のためのオールインワンパーソナルジムです。</p>
-    <div class="hero-chips">
-      <span class="hc">⏱ 1回30分〜</span><span class="hc">👜 手ぶらOK</span><span class="hc">🔒 完全個室</span><span class="hc">👶 お子様連れ歓迎</span><span class="hc">📱 当日予約OK</span>
+    <div class="hero-cp">📍 北浦和駅 徒歩4分</div>
+    <h1>完全マンツーマンで<br>筋トレとピラティスが<br><em>通い放題。</em></h1>
+    <p class="hero-sub">1回30分・手ぶらOK・完全個室・当日予約OK</p>
+    <div class="hero-campaign">
+      <div class="hero-campaign-label">＼ 期間限定キャンペーン ／</div>
+      <div class="hero-campaign-grid">
+        <div class="hero-campaign-item">
+          <span class="hci-label">体験セッション</span>
+          <span class="hci-old">5,500円</span>
+          <span class="hci-new">無料</span>
+        </div>
+        <div class="hero-campaign-item">
+          <span class="hci-label">入会金</span>
+          <span class="hci-old">50,000円</span>
+          <span class="hci-new">無料</span>
+        </div>
+      </div>
     </div>
-    <a href="https://resist-official.stores.jp/reserve/kitaurawa/2139246/book/course_type" target="_blank" rel="noopener" class="cta">無料体験を予約する</a>
-    <span class="cn">カンタン60秒・無理な勧誘は一切ありません</span>
+    <a href="https://resist-official.stores.jp/reserve/kitaurawa/2139246/book/course_type" target="_blank" rel="noopener" class="cta">無料体験を予約する →</a>
+    <span class="cn">無理な勧誘は一切ありません</span>
   </div>
 </section>
 
 <div class="tk" aria-hidden="true"><div class="tk-inner"><span>通い放題</span><span>完全個室</span><span>手ぶらOK</span><span>30分からOK</span><span>当日予約OK</span><span>ウェアレンタル無料</span><span>お子様連れ歓迎</span><span>ペアトレーニング可</span><span>通い放題</span><span>完全個室</span><span>手ぶらOK</span><span>30分からOK</span><span>当日予約OK</span><span>ウェアレンタル無料</span><span>お子様連れ歓迎</span><span>ペアトレーニング可</span></div></div>
-
-<section class="s"><div class="w"><div class="cp rv">
-  <div class="cp-badge eng">LIMITED CAMPAIGN</div>
-  <h2 class="cp-title">春に魅せるカラダへ、<br>変わるなら今から！</h2>
-  <div class="cp-grid">
-    <div class="cp-item"><p class="cp-lbl">体験セッション(60分)</p><p class="cp-old">通常 5,500円</p><p class="cp-new">無料</p></div>
-    <div class="cp-item"><p class="cp-lbl">入会金</p><p class="cp-old">通常 50,000円</p><p class="cp-new">無料</p></div>
-  </div>
-  <p class="cp-note">※定員に達し次第、キャンペーンは終了となります。</p>
-</div></div></section>
 
 <section class="s pain"><div class="w">
   <p class="sl rv">Problem</p>
